@@ -4,13 +4,13 @@ import './Counter.css'
 const Counter = () => {
     
     const [count, setCount] = useState(1)
-    const stock = 5;
+    const stock = 10;
 
     function set (){
       if(count > 0  && count<stock){
         setCount(count + 1);
       } else {
-        console.log("Stock agotado")
+        console.log("Stock agotado");
       }
         
     }
@@ -27,7 +27,7 @@ const Counter = () => {
   return (
     
     <div className = "div">
-        <h1>Usted hizo {count} clicks</h1>
+        <h1>Usted seleccionó {count} elementos y el Stock total es de {stock} unidades </h1>
         <button type="button" onClick={set}>Sumar</button>
         <button type="button" onClick={dec}>Restar</button>
     </div>
