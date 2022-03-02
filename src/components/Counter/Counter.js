@@ -9,18 +9,14 @@ const Counter = () => {
     function set (){
       if(count > 0  && count<stock){
         setCount(count + 1);
-      } else {
-        console.log("Stock agotado");
-      }
+      } 
         
     }
 
     function dec (){
       if (count > 1 ){
         setCount (count - 1)
-      } else {
-        console.log ("El stock minimo es 1")
-      }
+      } 
         
     }
 
@@ -28,8 +24,8 @@ const Counter = () => {
     
     <div className = "div">
         <h1>Usted seleccionó {count} elementos y el Stock total es de {stock} unidades </h1>
-        <button type="button" onClick={set}>Sumar</button>
-        <button type="button" onClick={dec}>Restar</button>
+        <button type="button" onClick={set}>+</button>
+        <button disabled={count===0} type="button" onClick={dec}>-</button>
     </div>
   )
 }
