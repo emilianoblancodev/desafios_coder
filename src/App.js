@@ -1,15 +1,16 @@
 import logo from './logo.svg';
 // import './App.css';
 import Counter from './components/Counter/Counter';
-import Efecto from './components/Efecto/Efecto';
+
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ILContainer from './components/ILContainer/ILContainer';
 
 
 function App() {
   return (
     <>
-      <ItemListContainer></ItemListContainer>
-      
+      {/* <ItemListContainer></ItemListContainer> */}
+      <ILContainer></ILContainer>
     </>
   );
 }

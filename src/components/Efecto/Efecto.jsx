@@ -22,7 +22,7 @@ const Efecto = () => {
 
   return (
     <>
-      <h1>{info.time_zone.current_time}</h1>
+      
       
       
       
